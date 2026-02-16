@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Analytics Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --medical-green: #00a69c; 
+            --soft-bg: #f8fafc; 
+            --dark-blue: #0f172a;
+        }
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 0; background-color: var(--soft-bg); color: var(--dark-blue); }
+        
+        .header { background: #fff; padding: 20px; text-align: center; border-bottom: 3px solid var(--medical-green); position: sticky; top: 0; z-index: 100; }
+        .header h1 { margin: 0; font-size: 20px; font-weight: 800; color: var(--medical-green); }
+        .header p { margin: 5px 0 0; font-size: 13px; color: #64748b; font-weight: 600; }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; padding-bottom: 150px; }
+
+        /* Project Card Design */
+        .project-card { 
+            background: #fff; padding: 20px; border-radius: 18px; margin-bottom: 15px; 
+            display: flex; align-items: flex-start; gap: 15px;
+            border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        
+        .check-icon { 
+            background: var(--medical-green); color: white; width: 24px; height: 24px; 
+            border-radius: 50%; font-size: 14px; display: flex; align-items: center; 
+            justify-content: center; flex-shrink: 0; margin-top: 3px;
+        }
+
+        .project-info { text-align: left; }
+        .project-tool { font-size: 10px; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: var(--medical-green); font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+        .project-name { font-size: 17px; font-weight: 800; color: #1e293b; margin: 8px 0 4px 0; }
+        .project-desc { font-size: 13px; color: #64748b; line-height: 1.5; }
+
+        /* Bottom Fixed Navigation */
+        .nav-area { 
+            background: #fff; padding: 20px; border-top: 1px solid #eee;
+            position: fixed; bottom: 0; width: 100%; left: 0;
+            display: flex; flex-direction: column; align-items: center; gap: 12px;
+            box-shadow: 0 -10px 25px rgba(0,0,0,0.05);
+        }
+
+        .btn-next { 
+            width: 90%; max-width: 400px; background: var(--medical-green); color: white; 
+            padding: 18px; border-radius: 15px; text-decoration: none; 
+            font-weight: 800; font-size: 16px; text-align: center;
+            box-shadow: 0 8px 20px rgba(0,166,156,0.25);
+        }
+
+        .btn-gallery { 
+            color: #94a3b8; text-decoration: none; font-size: 14px; font-weight: 700; 
+            transition: 0.2s;
+        }
+        .btn-gallery:hover { color: var(--medical-green); }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Healthcare Case Studies</h1>
+        <p>Top 6 Industry-Standard Projects</p>
+    </div>
+
+    <div class="container">
+
+        <div class="project-card">
+            <div class="check-icon">✓</div>
+            <div class="project-info">
+                <span class="project-tool">Python & Machine Learning</span>
+                <div class="project-name">Diabetes Risk Prediction</div>
+                <p class="project-desc">Analyzing patient lifestyle data and medical history to predict the early onset of diabetes with 90% accuracy.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="check-icon">✓</div>
+            <div class="project-info">
+                <span class="project-tool">Power BI Dashboard</span>
+                <div class="project-name">Hospital ER Flow Analysis</div>
+                <p class="project-desc">Tracking emergency room traffic and patient wait-times to optimize doctor shifts and reduce congestion.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="project-card">
+            <div class="check-icon">✓</div>
+            <div class="project-info">
+                <span class="project-tool">SQL Database</span>
+                <div class="project-name">Patient Health Record System</div>
+                <p class="project-desc">Designing a high-speed SQL database to retrieve complex medical histories in under 1 second during emergencies.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="check-icon">✓</div>
+            <div class="project-info">
+                <span class="project-tool">Tableau Visualization</span>
+                <div class="project-name">Disease Outbreak Map</div>
+                <p class="project-desc">Visualizing real-time data of infection spread to help city authorities deploy medical resources where needed.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="check-icon">✓</div>
+            <div class="project-info">
+                <span class="project-tool">Advanced Excel</span>
+                <div class="project-name">Medical Inventory Tracker</div>
+                <p class="project-desc">Using predictive formulas to manage hospital stock, ensuring life-saving medicines never go out of stock.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="check-icon">✓</div>
+            <div class="project-info">
+                <span class="project-tool">Statistics</span>
+                <div class="project-name">Clinical Trial Performance</div>
+                <p class="project-desc">Using statistical significance testing to verify the effectiveness of new drugs compared to existing treatments.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav-area">
+        <a href="projects-ecommerce.html" class="btn-next">Explore Next Sample projects →</a>
+        <a href="projects-gallery.html" class="btn-gallery">Back to Gallery</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            // Tracking lead visits
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxumEXj46lNby4y8Of9N7-3RHMG5htEBfOsSKiGeYlxh4IhtTJo_kEtyNKAAnDWizkjPA/exec';
+            const name = localStorage.getItem('leadName') || "Visitor";
+            const mobile = localStorage.getItem('leadMobile') || "000";
+            fetch(scriptURL + `?name=${encodeURIComponent(name)}&mobile=${mobile}&status=CHECKED_6_HEALTH_PROJECTS`, { mode: 'no-cors' });
+        };
+    </script>
+
+</body>
+</html>

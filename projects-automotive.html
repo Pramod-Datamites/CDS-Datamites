@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Analytics Portfolio | DataMites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --carbon-grey: #2c3e50; 
+            --racing-red: #e74c3c; 
+            --silver: #bdc3c7;
+            --bg-light: #f4f7f6;
+        }
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 0; background-color: var(--bg-light); color: var(--carbon-grey); }
+        
+        .header { background: var(--carbon-grey); padding: 20px; text-align: center; border-bottom: 4px solid var(--racing-red); position: sticky; top: 0; z-index: 100; color: white; }
+        .header h1 { margin: 0; font-size: 20px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+        .header p { margin: 5px 0 0; font-size: 13px; color: var(--silver); font-weight: 600; }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; padding-bottom: 150px; }
+
+        /* Project Card Design */
+        .project-card { 
+            background: #fff; padding: 20px; border-radius: 15px; margin-bottom: 15px; 
+            display: flex; align-items: flex-start; gap: 15px;
+            border: 1px solid #e0e0e0; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .car-icon { 
+            background: #fdf2f2; color: var(--racing-red); width: 35px; height: 35px; 
+            border-radius: 50%; font-size: 18px; display: flex; align-items: center; 
+            justify-content: center; flex-shrink: 0; font-weight: bold; border: 1px solid #fadbd8;
+        }
+
+        .project-info { text-align: left; }
+        .tool-label { font-size: 10px; background: #ebedef; padding: 4px 10px; border-radius: 6px; color: var(--carbon-grey); font-weight: 800; text-transform: uppercase; }
+        .project-name { font-size: 17px; font-weight: 800; color: var(--carbon-grey); margin: 10px 0 5px 0; }
+        .project-desc { font-size: 13px; color: #5f6a6a; line-height: 1.5; }
+
+        /* Navigation Bar */
+        .nav-area { 
+            background: #fff; padding: 20px; border-top: 1px solid #eee;
+            position: fixed; bottom: 0; width: 100%; left: 0;
+            display: flex; flex-direction: column; align-items: center; gap: 12px;
+            box-shadow: 0 -10px 25px rgba(0,0,0,0.1);
+        }
+
+        .btn-next { 
+            width: 90%; max-width: 400px; background: var(--racing-red); 
+            color: white; padding: 18px; border-radius: 12px; text-decoration: none; 
+            font-weight: 800; font-size: 16px; text-align: center;
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+        }
+
+        .btn-gallery { 
+            color: #7f8c8d; text-decoration: none; font-size: 14px; font-weight: 700; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Automotive Data Intelligence</h1>
+        <p>Driving Innovation with Data Science</p>
+    </div>
+
+    <div class="container">
+
+        <div class="project-card">
+            <div class="car-icon">⚙️</div>
+            <div class="project-info">
+                <span class="tool-label">Python & Machine Learning</span>
+                <div class="project-name">Predictive Maintenance System</div>
+                <p class="project-desc">Analyzing sensor data from car engines to predict potential failures before they happen, reducing breakdown costs.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="car-icon">🚗</div>
+            <div class="project-info">
+                <span class="tool-label">SQL & Power BI</span>
+                <div class="project-name">Vehicle Sales Performance</div>
+                <p class="project-desc">A dashboard for car dealers to track which models (SUV vs Sedan) are selling fastest in different regions.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="project-card">
+            <div class="car-icon">⚡</div>
+            <div class="project-info">
+                <span class="tool-label">Data Science</span>
+                <div class="project-name">EV Battery Range Optimizer</div>
+                <p class="project-desc">Using historical driving data to accurately predict the remaining battery life and range for Electric Vehicles.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="car-icon">🛠️</div>
+            <div class="project-info">
+                <span class="tool-label">Advanced Excel</span>
+                <div class="project-name">Spare Parts Inventory Control</div>
+                <p class="project-desc">Optimizing the supply of spare parts to service centers to ensure zero delay in customer car repairs.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="car-icon">🛡️</div>
+            <div class="project-info">
+                <span class="tool-label">Statistics</span>
+                <div class="project-name">Safety Crash Test Analysis</div>
+                <p class="project-desc">Analyzing data from crash test simulations to improve vehicle safety ratings and passenger protection.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="car-icon">🌍</div>
+            <div class="project-info">
+                <span class="tool-label">Tableau</span>
+                <div class="project-name">Global Supply Chain Logistics</div>
+                <p class="project-desc">Visualizing the movement of car components from international suppliers to the assembly plant to avoid production delays.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav-area">
+        <a href="placement-team.html" class="btn-next">Next: Placement Support Process →</a>
+        <a href="projects-gallery.html" class="btn-gallery">Back to Projects Gallery</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxumEXj46lNby4y8Of9N7-3RHMG5htEBfOsSKiGeYlxh4IhtTJo_kEtyNKAAnDWizkjPA/exec';
+            const name = localStorage.getItem('leadName') || "Visitor";
+            const mobile = localStorage.getItem('leadMobile') || "000";
+            fetch(scriptURL + `?name=${encodeURIComponent(name)}&mobile=${mobile}&status=VIEWED_AUTO_PROJECTS`, { mode: 'no-cors' });
+        };
+    </script>
+
+</body>
+</html>

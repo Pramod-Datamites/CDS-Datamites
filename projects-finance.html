@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Analytics Portfolio | DataMites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --finance-gold: #c5a059; 
+            --navy-blue: #0a192f; 
+            --glass-bg: #ffffff;
+            --text-gray: #64748b;
+        }
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 0; background-color: #f1f5f9; color: var(--navy-blue); }
+        
+        .header { background: var(--navy-blue); padding: 25px 20px; text-align: center; color: white; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .header h1 { margin: 0; font-size: 20px; font-weight: 800; color: var(--finance-gold); letter-spacing: 1px; }
+        .header p { margin: 5px 0 0; font-size: 13px; opacity: 0.8; }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; padding-bottom: 160px; }
+
+        /* Project Card Styling */
+        .project-card { 
+            background: #fff; padding: 20px; border-radius: 18px; margin-bottom: 15px; 
+            display: flex; align-items: flex-start; gap: 15px;
+            border: 1px solid #e2e8f0; transition: transform 0.2s;
+        }
+        
+        .icon-box { 
+            background: #fef9c3; color: var(--finance-gold); width: 28px; height: 28px; 
+            border-radius: 8px; font-size: 16px; display: flex; align-items: center; 
+            justify-content: center; flex-shrink: 0; font-weight: bold;
+        }
+
+        .project-info { text-align: left; }
+        .tool-tag { font-size: 10px; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: var(--navy-blue); font-weight: 800; text-transform: uppercase; border: 1px solid #e2e8f0; }
+        .project-name { font-size: 17px; font-weight: 800; color: var(--navy-blue); margin: 10px 0 5px 0; }
+        .project-desc { font-size: 13px; color: var(--text-gray); line-height: 1.5; }
+
+        /* Navigation Buttons */
+        .nav-area { 
+            background: #fff; padding: 20px; border-top: 1px solid #eee;
+            position: fixed; bottom: 0; width: 100%; left: 0;
+            display: flex; flex-direction: column; align-items: center; gap: 12px;
+            box-shadow: 0 -10px 25px rgba(0,0,0,0.08);
+        }
+
+        .btn-next { 
+            width: 90%; max-width: 400px; background: var(--navy-blue); color: #fff; 
+            padding: 18px; border-radius: 15px; text-decoration: none; 
+            font-weight: 800; font-size: 16px; text-align: center;
+            border: 2px solid var(--finance-gold);
+        }
+
+        .btn-gallery { 
+            color: var(--text-gray); text-decoration: none; font-size: 14px; font-weight: 700; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Finance Case Studies</h1>
+        <p>Advanced Financial Intelligence Projects</p>
+    </div>
+
+    <div class="container">
+
+        <div class="project-card">
+            <div class="icon-box">$</div>
+            <div class="project-info">
+                <span class="tool-tag">Python & ML</span>
+                <div class="project-name">Credit Risk Assessment</div>
+                <p class="project-desc">Building a predictive model to determine if a loan applicant is likely to default based on credit history and income.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="icon-box">$</div>
+            <div class="project-info">
+                <span class="tool-tag">SQL & Tableau</span>
+                <div class="project-name">Fraud Detection Dashboard</div>
+                <p class="project-desc">Identifying suspicious banking transactions in real-time to prevent credit card fraud and money laundering.</p>
+            </div>
+        </div>
+        
+        
+
+        <div class="project-card">
+            <div class="icon-box">$</div>
+            <div class="project-info">
+                <span class="tool-tag">Statistics & Python</span>
+                <div class="project-name">Stock Market Trend Analysis</div>
+                <p class="project-desc">Using time-series forecasting to predict stock price movements and market volatility for investors.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="icon-box">$</div>
+            <div class="project-info">
+                <span class="tool-tag">Power BI</span>
+                <div class="project-name">Quarterly Revenue Tracker</div>
+                <p class="project-desc">A comprehensive financial dashboard comparing actual revenue vs. targets across global branches.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="icon-box">$</div>
+            <div class="project-info">
+                <span class="tool-tag">Advanced Excel</span>
+                <div class="project-name">Budgeting & Cash Flow Proj.</div>
+                <p class="project-desc">Automated financial modeling to forecast cash requirements and manage company expenses efficiently.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="icon-box">$</div>
+            <div class="project-info">
+                <span class="tool-tag">Python (NLP)</span>
+                <div class="project-name">Sentiment Analysis for Forex</div>
+                <p class="project-desc">Analyzing global news headlines to predict their impact on currency exchange rates (USD/INR).</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav-area">
+        <a href="projects-supplychain.html" class="btn-next">Explore next Projects list→</a>
+        <a href="projects-gallery.html" class="btn-gallery">Back to Gallery</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxumEXj46lNby4y8Of9N7-3RHMG5htEBfOsSKiGeYlxh4IhtTJo_kEtyNKAAnDWizkjPA/exec';
+            const name = localStorage.getItem('leadName') || "Visitor";
+            const mobile = localStorage.getItem('leadMobile') || "000";
+            fetch(scriptURL + `?name=${encodeURIComponent(name)}&mobile=${mobile}&status=VIEWED_FINANCE_PROJECTS`, { mode: 'no-cors' });
+        };
+    </script>
+
+</body>
+</html>

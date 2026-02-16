@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain & Logistics Portfolio | DataMites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --logistics-blue: #003366; 
+            --safety-yellow: #ffcc00; 
+            --bg-gray: #f4f4f9; 
+            --text-dark: #1a1a1a;
+        }
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 0; background-color: var(--bg-gray); color: var(--text-dark); }
+        
+        .header { background: var(--logistics-blue); padding: 20px; text-align: center; border-bottom: 5px solid var(--safety-yellow); position: sticky; top: 0; z-index: 100; color: white; }
+        .header h1 { margin: 0; font-size: 20px; font-weight: 800; color: var(--safety-yellow); }
+        .header p { margin: 5px 0 0; font-size: 13px; opacity: 0.9; }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; padding-bottom: 150px; }
+
+        /* Project Card Design */
+        .project-card { 
+            background: #fff; padding: 20px; border-radius: 15px; margin-bottom: 15px; 
+            display: flex; align-items: flex-start; gap: 15px;
+            border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .truck-icon { 
+            background: #fff9e6; color: var(--logistics-blue); width: 35px; height: 35px; 
+            border-radius: 8px; font-size: 18px; display: flex; align-items: center; 
+            justify-content: center; flex-shrink: 0; font-weight: bold; border: 1px solid var(--safety-yellow);
+        }
+
+        .project-info { text-align: left; }
+        .tool-label { font-size: 10px; background: #e6f0ff; padding: 4px 10px; border-radius: 6px; color: var(--logistics-blue); font-weight: 800; text-transform: uppercase; }
+        .project-name { font-size: 17px; font-weight: 800; color: var(--logistics-blue); margin: 10px 0 5px 0; }
+        .project-desc { font-size: 13px; color: #555; line-height: 1.5; }
+
+        /* Navigation Bar */
+        .nav-area { 
+            background: #fff; padding: 20px; border-top: 1px solid #eee;
+            position: fixed; bottom: 0; width: 100%; left: 0;
+            display: flex; flex-direction: column; align-items: center; gap: 12px;
+            box-shadow: 0 -10px 25px rgba(0,0,0,0.1);
+        }
+
+        .btn-next { 
+            width: 90%; max-width: 400px; background: var(--logistics-blue); 
+            color: white; padding: 18px; border-radius: 12px; text-decoration: none; 
+            font-weight: 800; font-size: 16px; text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 51, 102, 0.2);
+        }
+
+        .btn-gallery { 
+            color: #777; text-decoration: none; font-size: 14px; font-weight: 700; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Supply Chain Analytics</h1>
+        <p>Optimizing Global Trade & Movement</p>
+    </div>
+
+    <div class="container">
+
+        <div class="project-card">
+            <div class="truck-icon">🚚</div>
+            <div class="project-info">
+                <span class="tool-label">Python & Optimization</span>
+                <div class="project-name">Route Optimization Engine</div>
+                <p class="project-desc">Using GPS data to find the shortest and most fuel-efficient delivery routes, reducing transportation costs by 15%.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="truck-icon">📦</div>
+            <div class="project-info">
+                <span class="tool-label">Machine Learning</span>
+                <div class="project-name">Warehouse Demand Forecasting</div>
+                <p class="project-desc">Predicting future product demand to prevent overstocking and stock-outs in regional distribution centers.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="project-card">
+            <div class="truck-icon">⏲️</div>
+            <div class="project-info">
+                <span class="tool-label">Power BI</span>
+                <div class="project-name">Shipment Delay Tracker</div>
+                <p class="project-desc">A real-time dashboard identifying bottlenecks in the supply chain where shipments are stuck for more than 24 hours.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="truck-icon">🏭</div>
+            <div class="project-info">
+                <span class="tool-label">SQL & Advanced Excel</span>
+                <div class="project-name">Supplier Performance Scorecard</div>
+                <p class="project-desc">Ranking suppliers based on delivery speed, product quality, and cost-effectiveness using historical data.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="truck-icon">🛡️</div>
+            <div class="project-info">
+                <span class="tool-label">Statistics</span>
+                <div class="project-name">Inventory Safety Stock Analysis</div>
+                <p class="project-desc">Using statistical models to calculate the exact amount of "Safety Stock" needed to avoid shortages during peak seasons.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="truck-icon">🚢</div>
+            <div class="project-info">
+                <span class="tool-label">Tableau Visualization</span>
+                <div class="project-name">Global Freight Cost Analysis</div>
+                <p class="project-desc">Visualizing international shipping costs (Sea vs Air) to help companies choose the best shipping method for each region.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav-area">
+        <a href="projects-automotive.html" class="btn-next">Next:project list →</a>
+        <a href="projects-gallery.html" class="btn-gallery">Back to Projects Gallery</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxumEXj46lNby4y8Of9N7-3RHMG5htEBfOsSKiGeYlxh4IhtTJo_kEtyNKAAnDWizkjPA/exec';
+            const name = localStorage.getItem('leadName') || "Visitor";
+            const mobile = localStorage.getItem('leadMobile') || "000";
+            fetch(scriptURL + `?name=${encodeURIComponent(name)}&mobile=${mobile}&status=VIEWED_LOGISTICS_PROJECTS`, { mode: 'no-cors' });
+        };
+    </script>
+
+</body>
+</html>

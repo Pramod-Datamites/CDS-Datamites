@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Analytics Portfolio | DataMites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --ecom-orange: #ff4e00; 
+            --ecom-purple: #4e2a84; 
+            --bg-light: #fdfeff; 
+            --text-main: #1a1a1a;
+        }
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 0; background-color: var(--bg-light); color: var(--text-main); }
+        
+        .header { background: #fff; padding: 20px; text-align: center; border-bottom: 4px solid var(--ecom-orange); position: sticky; top: 0; z-index: 100; }
+        .header h1 { margin: 0; font-size: 20px; font-weight: 800; color: var(--ecom-purple); }
+        .header p { margin: 5px 0 0; font-size: 13px; color: #666; font-weight: 600; }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; padding-bottom: 150px; }
+
+        /* Project Card Design */
+        .project-card { 
+            background: #fff; padding: 20px; border-radius: 20px; margin-bottom: 15px; 
+            display: flex; align-items: flex-start; gap: 15px;
+            border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+        
+        .cart-icon { 
+            background: #fff0e6; color: var(--ecom-orange); width: 30px; height: 30px; 
+            border-radius: 10px; font-size: 16px; display: flex; align-items: center; 
+            justify-content: center; flex-shrink: 0; font-weight: bold;
+        }
+
+        .project-info { text-align: left; }
+        .tool-label { font-size: 10px; background: #f3f0ff; padding: 4px 10px; border-radius: 6px; color: var(--ecom-purple); font-weight: 800; text-transform: uppercase; }
+        .project-name { font-size: 17px; font-weight: 800; color: #111; margin: 10px 0 5px 0; }
+        .project-desc { font-size: 13px; color: #555; line-height: 1.5; }
+
+        /* Navigation Bar */
+        .nav-area { 
+            background: #fff; padding: 20px; border-top: 1px solid #eee;
+            position: fixed; bottom: 0; width: 100%; left: 0;
+            display: flex; flex-direction: column; align-items: center; gap: 12px;
+            box-shadow: 0 -10px 25px rgba(0,0,0,0.05);
+        }
+
+        .btn-next { 
+            width: 90%; max-width: 400px; background: linear-gradient(90deg, var(--ecom-orange), #ff8c00); 
+            color: white; padding: 18px; border-radius: 15px; text-decoration: none; 
+            font-weight: 800; font-size: 16px; text-align: center;
+            box-shadow: 0 8px 20px rgba(255, 78, 0, 0.2);
+        }
+
+        .btn-gallery { 
+            color: #999; text-decoration: none; font-size: 14px; font-weight: 700; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>E-commerce Data Science</h1>
+        <p>Turning Online Shoppers into Loyal Customers</p>
+    </div>
+
+    <div class="container">
+
+        <div class="project-card">
+            <div class="cart-icon">🛒</div>
+            <div class="project-info">
+                <span class="tool-label">Python & ML</span>
+                <div class="project-name">Customer Churn Prediction</div>
+                <p class="project-desc">Identifying users who are likely to stop using the app and suggesting special discounts to retain them.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="cart-icon">🛍️</div>
+            <div class="project-info">
+                <span class="tool-label">SQL & Advanced Excel</span>
+                <div class="project-name">Inventory Demand Forecasting</div>
+                <p class="project-desc">Predicting which products will sell out during the "Mega Blockbuster Sale" to maintain perfect stock levels.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="project-card">
+            <div class="cart-icon">✨</div>
+            <div class="project-info">
+                <span class="tool-label">Machine Learning</span>
+                <div class="project-name">Product Recommendation Engine</div>
+                <p class="project-desc">Building a "Customers also bought" feature using association rules to increase the average order value.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="cart-icon">🚚</div>
+            <div class="project-info">
+                <span class="tool-label">Tableau Visualization</span>
+                <div class="project-name">Delivery Lead-Time Analysis</div>
+                <p class="project-desc">Visualizing logistics data to identify which courier partners are causing shipping delays in specific pin codes.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="cart-icon">⭐</div>
+            <div class="project-info">
+                <span class="tool-label">NLP (Python)</span>
+                <div class="project-name">Sentiment Analysis of Reviews</div>
+                <p class="project-desc">Automatically categorizing thousands of customer reviews into 'Positive', 'Negative', or 'Neutral' to improve product quality.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="cart-icon">💰</div>
+            <div class="project-info">
+                <span class="tool-label">Power BI</span>
+                <div class="project-name">Marketing ROI Dashboard</div>
+                <p class="project-desc">Analyzing which social media ads (Instagram vs Facebook) are bringing the highest sales for every rupee spent.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav-area">
+        <a href="projects-finance.html" class="btn-next">Next Sample project list  →</a>
+        <a href="projects-gallery.html" class="btn-gallery">Back to Projects Gallery</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxumEXj46lNby4y8Of9N7-3RHMG5htEBfOsSKiGeYlxh4IhtTJo_kEtyNKAAnDWizkjPA/exec';
+            const name = localStorage.getItem('leadName') || "Visitor";
+            const mobile = localStorage.getItem('leadMobile') || "000";
+            fetch(scriptURL + `?name=${encodeURIComponent(name)}&mobile=${mobile}&status=VIEWED_ECOM_PROJECTS`, { mode: 'no-cors' });
+        };
+    </script>
+
+</body>
+</html>
